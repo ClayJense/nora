@@ -1,0 +1,10 @@
+Hugging Face API
+
+ollama run mistral
+
+ollama run gemma
+
+ollama run tinyllama
+
+
+le lien : https://platform.openai.com/

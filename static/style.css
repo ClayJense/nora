@@ -1,0 +1,90 @@
+:root {
+    --dark-primary: #121212;
+    --dark-secondary: #1a1a1a;
+    --pink-glow: #ff69b4;
+    --pink-soft: rgba(255, 105, 180, 0.2);
+}
+
+body {
+    background-color: var(--dark-primary);
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background-color: var(--dark-secondary) !important;
+    border-bottom: 1px solid var(--pink-glow);
+}
+
+#hero {
+    background: var(--dark-primary);
+    min-height: 100vh;
+    position: relative;
+}
+
+#hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at center, var(--pink-soft) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.logo-container {
+    position: relative;
+}
+
+.logo-container::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: radial-gradient(circle at center, var(--pink-glow) 0%, transparent 70%);
+    filter: blur(10px);
+    z-index: -1;
+}
+
+.btn-primary {
+    background-color: var(--dark-secondary);
+    border: 1px solid var(--pink-glow);
+    box-shadow: 0 0 10px var(--pink-soft);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--pink-glow);
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px var(--pink-glow);
+}
+
+.card {
+    background-color: var(--dark-secondary);
+    border: 1px solid var(--pink-soft);
+    box-shadow: 0 0 15px rgba(255, 105, 180, 0.1);
+}
+
+section {
+    background-color: var(--dark-primary);
+    border-bottom: 1px solid var(--pink-soft);
+}
+
+.chat-output {
+    background-color: var(--dark-secondary) !important;
+    color: #ffffff;
+    border: 1px solid var(--pink-soft) !important;
+}
+
+#analysisResult {
+    background-color: var(--dark-secondary);
+    color: #ffffff;
+}
+
+footer {
+    background-color: var(--dark-secondary);
+    border-top: 1px solid var(--pink-glow);
+}
