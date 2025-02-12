@@ -67,7 +67,7 @@ function analyzeImage() {
     const formData = new FormData();
     formData.append("image", fileInput.files[0]);
 
-    fetch("http://127.0.0.1:5000/detect", {
+    fetch("https://nora-1hry.onrender.com/detect", {  // Remplace par ton URL Render
         method: "POST",
         body: formData,
     })
